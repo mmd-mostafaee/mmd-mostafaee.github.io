@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Sahel;
+    src: url('fonts/Sahel-FD.eot');
+    src: url('fonts/Sahel-FD.eot?#iefix') format('embedded-opentype'), url('fonts/Sahel-FD.woff') format('woff'), url('fonts/Sahel-FD.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Sahel;
+    src: url('fonts/Sahel-Bold-FD.eot');
+    src: url('fonts/Sahel-Bold-FD.eot?#iefix') format('embedded-opentype'), url('fonts/Sahel-Bold-FD.woff') format('woff'), url('fonts/Sahel-Bold-FD.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Sahel;
+    src: url('fonts/Sahel-Black-FD.eot');
+    src: url('fonts/Sahel-Black-FD.eot?#iefix') format('embedded-opentype'), url('fonts/Sahel-Black-FD.woff') format('woff'), url('fonts/Sahel-FD.ttf') format('truetype');
+    font-weight: 900;
+}
+
+body {
+    background-color: rgb(238, 239, 241);
+    background: url('/img/background.jpg');
+}
+* {
+    font-family: Sahel;
+}
+.container,.container-fluid {
+}
+
+.menu {
+    padding: 10px;
+    border-radius: 0px 0px 15px 15px;
+}
+.menu ul li a {
+    color: white;
+    transition: all .5s;
+}
+.menu ul li a:hover {
+    color : black;
+    background-color: white;
+}
+
+.menu ul li a:focus{
+    color : black;
+    background-color: white;
+}
+.active>a{
+    background-color: white !important;
+    color: black !important;
+}
+
+.gallery {
+    padding: 20px;
+}
+.aling-box {
+    float: right !important;
+}
+.img-box {
+    background-color: rgb(144, 198, 244);
+    float: right;
+    box-shadow: 0px 15px 20px -10px black;
+    transition: all .5s;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 10px 10px 0px 10px;
+}
+.img-box:hover .price {
+    transform: scale(1.1,1);
+}
+.img-box:hover .img-box-img img{
+    transform: translate(0px,-5px) scale(1.1,1.1);
+}
+
+.img-box-img img {
+    transition: all .5s;
+    box-shadow: 0px 10px 25px -10px;
+    border-radius: 5px;
+    padding: 0px;
+}
+.img-box-text h4 {
+    text-align: center;
+    padding: 5px 0px;
+}
+.img-box-text p {
+    text-align: center;
+    line-height: 25px;
+}
+.price {
+    transition: all .5s;
+}
+.price h5 {
+    background-color: rgb(255, 79, 79);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0px;
+    border-radius: 5px 5px 0px 0px;
+}
